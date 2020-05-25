@@ -1,12 +1,15 @@
 {
   "name": "name-me",
+  "jest": {
+    "verbose": true
+  },
   "version": "1.0.0",
   "description": "empty react babel redux jest webpack testing environment",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --mode production",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "author": "",
   "license": "ISC",
@@ -18,10 +21,12 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "file-loader": "^5.1.0",
     "jest": "^26.0.1",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
+    "react-bootstrap": "^1.0.1",
     "react-combine-reducers": "^1.0.2",
     "react-dom": "^16.13.0",
     "react-hot-loader": "^4.12.19",
@@ -32,5 +37,8 @@
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {
+    "jest-cli": "^26.0.1"
   }
 }

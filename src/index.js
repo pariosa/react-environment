@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { Provider } from "react-redux";
 import store from './js/store/store';
 
-
 window.store = store;
 
 function Layout (){
